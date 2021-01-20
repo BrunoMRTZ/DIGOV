@@ -1,0 +1,6 @@
+# Run the following shell commands to add the repository and install from there.
+
+wget -nv https://download.owncloud.org/download/repositories/production/Ubuntu_20.04/Release.key -O - | sudo apt-key add -
+echo 'deb http://download.owncloud.org/download/repositories/production/Ubuntu_20.04/ /' | sudo tee -a /etc/apt/sources.list.d/owncloud.list
+sudo apt update
+sudo apt install owncloud-complete-files
